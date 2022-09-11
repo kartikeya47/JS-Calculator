@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <center>
+        <div id="layout">
+
+            <input type="text" name="answerValue" id="answerValue" readonly>
+            <input class="delete-buttons" type="button" value="Clear" onclick="answerValue.value=''"
+                id="clear-button" />
+            <input class="delete-buttons" type="button" value="Delete" onclick="answerValue.value=''"
+                id="clear-button" />
+            <input type="button" value="/" onclick="mainUpdate('/')" />
+            <input type="button" value="1" onclick="mainUpdate(1)" />
+            <input type="button" value="2" onclick="mainUpdate(2)" />
+            <input type="button" value="3" onclick="mainUpdate(3)" />
+            <input type="button" value="*" onclick="mainUpdate('*')" />
+            <input type="button" value="4" onclick="mainUpdate(4)" />
+            <input type="button" value="5" onclick="mainUpdate(5)" />
+            <input type="button" value="6" onclick="mainUpdate(6)" />
+            <input type="button" value="+" onclick="mainUpdate('+')" />
+            <input type="button" value="7" onclick="mainUpdate(7)" />
+            <input type="button" value="8" onclick="mainUpdate(8)" />
+            <input type="button" value="9" onclick="mainUpdate(9)" />
+            <input type="button" value="-" onclick="mainUpdate('-')" />
+            <input type="button" value="." onclick="mainUpdate('.')" />
+            <input type="button" value="0" onclick="mainUpdate(0)" />
+            <input type="button" value="=" onclick="solve(answerValue.value)" />
+        </div>
+    </center>
+
+    <p id="madeby">Made with ❤️ by <a target=”_blank” id="profile"
+            href="https://in.linkedin.com/in/kartikeya-rawat-5a38181b3">Kartikeya Rawat</a></p>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
